@@ -42,7 +42,7 @@ public class JobController {
         // redirect to the job detail view for the new Job.
 
         if (errors.hasErrors()) {
-            return "new-job"
+            return "new-job";
 
     }
 }
