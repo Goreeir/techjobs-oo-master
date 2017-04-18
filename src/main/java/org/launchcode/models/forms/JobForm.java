@@ -28,6 +28,26 @@ public class JobForm {
         Don't forget to add getters and setters
      */
 
+    @NotNull
+    private int locationId;
+
+    @NotNull
+    private int coreCompetencyId;
+
+    @NotNull
+    private int positionTypeId;
+
+    private ArrayList<Employer> employers;
+    private ArrayList<Location> locations;
+    private ArrayList<CoreCompetency> coreCompetencies;
+    private ArrayList<PositionType> positionTypes;
+
+    public JobForm() {
+
+        JobData jobData = JobData.getInstance();
+
+       /*
+
     private ArrayList<Employer> employers;
     private ArrayList<Location> locations;
     private ArrayList<CoreCompetency> coreCompetencies;
